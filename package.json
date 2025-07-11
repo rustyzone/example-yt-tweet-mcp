@@ -1,0 +1,33 @@
+{
+  "name": "mcp-youtube-video-to-tweet",
+  "version": "1.0.0",
+  "description": "Model Context Protocol server that transforms YouTube videos into engaging social media content using AI",
+  "main": "dist/mcp-server.js",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rustyzone/example-yt-tweet-mcp.git"
+  },
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node-dev --respawn --transpile-only src/mcp-server.ts",
+    "start": "node dist/mcp-server.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.4.0",
+    "@types/dotenv": "^8.2.3",
+    "axios": "^1.10.0",
+    "dotenv": "^17.0.1",
+    "puppeteer": "^21.6.1",
+    "uuid": "^9.0.1",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.5",
+    "@types/uuid": "^9.0.7",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.3.3"
+  }
+}
